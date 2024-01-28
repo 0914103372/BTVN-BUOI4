@@ -1,0 +1,187 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    zoom:1.05;
+}
+html{
+    background-color: #373737;
+}
+.main{
+    display: flex;
+    margin: 300px;
+    width: 1000px;
+    height: auto;
+}
+.e1{
+ width: 480px;
+ height: 330px;
+ overflow: hidden;
+ display: flex;
+ position: relative;
+ justify-content: center;
+ right: 10px;
+}
+
+.chu{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    top:80px;
+    transition-duration:0.5s; 
+    
+}
+.e1:hover .chu{
+    transform: translateY(40px);
+}
+.itembig{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    
+} 
+.itembig::after{
+    content: "LAYLA";
+    font-weight: 600;
+} 
+.itemsmall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    opacity:0;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    transition-duration:0.3s; 
+    transition-timing-function: ease-in;
+    
+    
+}
+
+.e1:hover .itemsmall{
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.e1 img{
+    opacity: 0.8;
+    width:480px ;
+    height: 370px ;
+    position: absolute;
+    top:-40px;
+    transition-duration:0.5s;    
+}
+.e1:hover img{
+    top:0;
+    opacity: 0.5;
+} 
+.frame{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    box-sizing: border-box;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    top:50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.frame::after{
+    display: block;
+    content: "";
+    width: 250px;
+    height: 250px;
+    position: relative;
+    box-sizing: border-box;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    left: 25px;
+    bottom: 25px ;
+    transition: 0.3s;
+    
+}
+.e1:hover .frame{
+    opacity: 1;
+}
+.e2{
+    display: flex;
+    width: 400px;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+
+}
+.iteme2{
+    width: 400px;
+    height: 60%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -65px;
+    transition-duration: 0.8s;
+}
+.e2:hover .iteme2{
+    bottom:0px
+}
+.item1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.8s;
+}
+.e2:hover .item1{
+    opacity: 1;
+}
+.itemm1{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+.box{
+    width: 400px;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+.itemb1{
+    font-family: 'Inter', sans-serif;
+    color: rgb(72, 69, 69);
+    font-weight: 300;
+    font-size: 25px;
+}
+.itemb1::after
+{
+    content: "ZOE";
+    font-family: 'Inter', sans-serif;
+    color: rgb(72, 69, 69);
+    font-weight: 700;
+    font-size: 25px;
+}
+.itemb2{
+    width: 80px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
